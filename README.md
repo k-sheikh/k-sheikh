@@ -1,7 +1,7 @@
 - 👋 Hi, I’m Kashan.
 - 👀 I’m interested in coding, reading and fitness.
 - 🌱 I’m currently learning software engineering using Python.
-- 💞️ I’m looking to collaborate on projects using Python, Django, JavaScript and React..
+- 💞️ I’m looking to collaborate on projects using Python, Django, JavaScript and React.
 - 📫 You can reach me on k-sheikh@hotmail.com
 
 <!---
