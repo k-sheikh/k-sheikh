@@ -53,11 +53,31 @@ def capture_shoes():
     # User input
     country = input("\nPlease enter the product country: ")
 
-    code = input("Please enter the product code: ")
+    # Check if product code is an integer
+    while True:
+        try:
+            code = int(input("Please enter the product code: "))
+            code = "SKU" + str(code)
+            pass
+        except ValueError:
+            print("\nSorry. That is not a valid input. Please enter an integer value.")
+            continue
+        else:
+            break
+
     # Check if product code exists
     while any(code in sublist for sublist in shoe_list):
-        print("Sorry, this code already exists.")
-        code = input("Please enter the product code: ")
+        print("\nSorry, this code already exists.")
+        while True:
+            try:
+                code = int(input("Please enter the product code: "))
+                code = "SKU" + str(code)
+                pass
+            except ValueError:
+                print("\nSorry. That is not a valid input. Please enter an integer value.")
+                continue
+            else:
+                break
     
     product = input("Please enter the product name: ")
     # Check if product name exists
